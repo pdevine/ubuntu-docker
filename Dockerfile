@@ -1,6 +1,3 @@
 FROM ubuntu:14.04
 MAINTAINER pdevine
-RUN apt-get update
-RUN apt-get dist-upgrade -y
-RUN apt-get install -y python-dev
-RUN apt-get install -y python-pip
+RUN apt-get update && apt-get install -y python-dev python-pip
